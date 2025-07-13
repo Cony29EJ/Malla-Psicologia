@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+}
+
+.titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #d63384;
+  margin-bottom: 2rem;
+}
+
+.tabla-malla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.6rem;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.encabezado-ano {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #ffe0eb;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.encabezado-semestre {
+  font-weight: bold;
+  background-color: #ffd6e0;
+  padding: 0.4rem 0.2rem;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.ramo {
+  padding: 0.8rem 1rem;
+  background-color: #ffc0cb;
+  border: 2px solid #d63384;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.ramo.aprobado {
+  background-color: #e599b2;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.ramo.bloqueado {
+  background-color: #f8d7da;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
